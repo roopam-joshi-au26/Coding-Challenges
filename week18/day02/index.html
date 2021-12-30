@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form>
+        <h1>Student Registration Form</h1>
+        <label>FIRST NAME:</label>
+        <input type="text" name="first" placeholder="Enter First Name"><span>(max 30 characters A-Z and a-z)</span><br>
+        <label>LAST NAME:</label>
+        <input type="text" name="last" placeholder="Enter Last Name"><span>(max 30 characters A-Z and a-z)</span><br>
+        <label>DATE OF BIRTH</label>
+        <input type="date" name="date"><br>
+        <label>EMAIL ID:</label>
+        <input type="email" name="email"><br>
+        <label>MOBILE NO:</label>
+        <input type="number" name="mobile" placeholder="Enter Your Mobile Number"><br>
+        <label>GENDER:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female<br>
+        <label>ADDRESS:</label>
+        <textarea name="address"></textarea><br>
+        <label>CITY:</label>
+        <input type="text" name="city" placeholder="Enter your city name"><br>
+        <label>PIN CODE:</label>
+        <input type="number" name="pin" placeholder="Enter Your pin code"><br>
+        <label>STATE:</label>
+        <input type="text" name="state" placeholder="Enter your state name"><br>
+        <label>COUNTRY:</label>
+        <input type="text" name="country" placeholder="Enter your country name"><br>
+        <label>HOBBIES :</label>
+        <input type="checkbox">singing
+        <input type="checkbox">dancing
+        <input type="checkbox">drawing
+        <input type="checkbox">sketching
+        <input type="checkbox">others
+        <input type='text' placeholder="Enter any other hobby"><br>
+        <label>QUALIFICATION:</label>
+        <table>
+            <tr>
+                <th>S.NO</th>
+                <th>EXAMINATION</th>
+                <th>BOARD</th>
+                <th>PERCENTAGE</th>
+                <th>YEAR OF PASSING</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Class X</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Graduation</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Masters</td>
+                <td><input type="text"><br><span>(10 char max)</span></td>
+                <td><input type="text"><br><span>(upto decimal)</span></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <label>COURSES:</label>
+        <input type="radio" name="course">B.Com
+        <input type="radio" name="course">B.Sc
+        <input type="radio" name="course">B.A
+        <input type="radio" name="course">BCA<br>
+        <button type="submit">Submit
+        <button type="submit">Reset
+    </form>
+</body>
+</html>
