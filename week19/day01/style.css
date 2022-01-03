@@ -1,0 +1,32 @@
+body{
+    margin:0px;
+}
+
+nav, footer{
+    position:fixed;
+    width:100%;
+    height:50px;
+    border-width:1px;
+    background-color: darkgrey;
+    border-style: solid;
+    text-align:center;
+}
+
+nav{
+    top:0px;
+}
+
+footer{
+    bottom: 0px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin:2px;
+    background-color:yellow;
+}
+
+td:hover{
+    background-color: rgb(54, 50, 50)
+}
