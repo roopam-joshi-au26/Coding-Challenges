@@ -1,0 +1,53 @@
+.card {
+    width: 350px;
+    height: 80vh;
+  }
+  
+  .card-body {
+    overflow-y: scroll;
+  }
+  
+  .card-text {
+    color: #cccccc;
+  }
+  
+  .card-header {
+    background: #4a54d9;
+    color: white;
+  }
+  .card-header input {
+    width: 100%;
+    text-indent: 10px;
+    background-color: #343c93;
+    border: none;
+    color: white;
+    padding: 8px;
+    margin: 5px 0px;
+  }
+  .card-header input:focus-visible {
+    outline: none;
+  }
+  
+  .people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #ebebeb;
+    height: 100px;
+  }
+  .people img {
+    border-radius: 50%;
+    height: 50%;
+    margin-left: 20px;
+  }
+  .people > div {
+    margin-left: 20px;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 500;
+  }/*# sourceMappingURL=styles.css.map */
