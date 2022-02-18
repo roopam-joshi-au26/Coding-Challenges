@@ -20,6 +20,19 @@ addtaskbtn.addEventListener('click', function(){
     showtask();
 })
 
+//on enter task
+
+// Execute a function when the user releases a key on the keyboard
+addtaskinput.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.key === 'Enter') {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("addtaskbtn").click();
+  }
+});
+
 //to show data in task area
 function showtask(){
     let webtask = localStorage.getItem('localtask');
@@ -102,7 +115,7 @@ deleteallbtn.addEventListener('click',function(){
 //search list
 let searchtextbox = document.getElementById('searchtextbox');
 searchtextbox.addEventListener('input', function(){
-    let trlist = document.querySelectorAll("tr");
+    let trlist = document.querySelectorAll("tr");//selecting all tr elements
     Array.from(trlist).forEach(function(item){
         let searchedtext = item.getElementsByTagName("td")[0].innerText;
         let searchtextboxval = searchtextbox.value;
