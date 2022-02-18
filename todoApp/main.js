@@ -105,6 +105,13 @@ searchtextbox.addEventListener('input', function(){
     let trlist = document.querySelectorAll("tr");
     Array.from(trlist).forEach(function(item){
         let searchedtext = item.getElementsByTagName("td")[0].innerText;
-        
+        let searchtextboxval = searchtextbox.value;
+        let re = new RegExp(searchtextboxval,'gi');//searching globally
+        if(searchedtext.match(re)){//searching through regular expression
+            item.style.display = 'table-row';
+        }
+        else{
+            item.style.display = 'none';
+        }
     })
 })
