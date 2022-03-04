@@ -1,0 +1,18 @@
+#parent {
+  background-color: wheat;
+  padding: 10px;
+  border-radius: 5px;
+}
+#next {
+  width: fit-content;
+  display: none;
+}
+.optionBox {
+  cursor: pointer;
+}
+.optionBox:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+input[type="radio"] {
+  cursor: pointer;
+}
