@@ -1,0 +1,21 @@
+{
+  "name": "basic_express_server_routes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "run",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Rupam Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "everyday-fun": "^1.1.0",
+    "express": "^4.17.2",
+    "gitignore": "^0.7.0",
+    "randomcolor": "^0.6.2"
+  }
+}
