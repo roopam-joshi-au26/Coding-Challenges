@@ -1,0 +1,33 @@
+<% include ('partials/header') %>
+    <link rel="stylesheet" href="/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    </head>
+
+    <body>
+        <h1>OUR STAR</h1>
+        <div class="container">
+            <% dogs.forEach((dogs) => { %>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://img.freepik.com/free-photo/lovely-pet-portrait-isolated_23-2149192357.jpg?t=st=1647419457~exp=1647420057~hmac=fb49c25d634776b6a0029af76cbeabd719b32c071fe642162f1f8ff4bb9e10fd&w=740" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= dogs.name %>
+                        </h5>
+                        <p class="card-text">Age:
+                            <%=dogs.age  %> <br> Bread:
+                                <%=dogs.breed  %> <br>Weight:
+                                    <%=dogs.weight  %> <br> Owner:
+                                        <%=dogs.owner  %>
+                        </p>
+                        <a href="http://localhost:3000/" class="btn btn-primary">Forum</a>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+
+    </body>
+
+    </html>

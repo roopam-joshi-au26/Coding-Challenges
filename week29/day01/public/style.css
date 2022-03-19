@@ -1,0 +1,14 @@
+.container {
+    height: 550px;
+    width: 500px;
+    background: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    align-items: center;
+    color: aliceblue;
+}
+
+button {
+    margin-top: 5%;
+}

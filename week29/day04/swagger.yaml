@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Cloudinary api
+  description: uploading file to cloudinary and displying in gallary using cloudinary link.
+  version: 1.0.0
+  contact:
+    email: prag@myself.com
+    url: "https://www.prag.com"
+
+servers:
+  - url: http://localhost:3002
+    description: local host our app
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+paths:
+  /upload:
+    get:
+      summary: return  html page to upload.
+      responses:
+        '200':
+          description: >
+            return index.html to upload image file.
+          content:
+            
+              
+  
+  /post:
+    post:
+      summary: post method to upload image.
+      responses:
+        '200':
+          description: >
+            return index.html to upload image file.
+          
+
+  /gallery:
+    get:
+      summary: return  gallery  page.
+      responses:
+        '200':
+          description: >
+            return ui.ejs to show the uploaded image file.
+          
+
+                
