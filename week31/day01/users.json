@@ -1,0 +1,15 @@
+{
+    "books": {
+        "bookname": "the book",
+        "price": 123,
+        "ISBN": "india",
+        "authorName": "Swapnil",
+
+        "publisherName": "Mr. bean",
+        "publishedDate": "20 april 2021",
+        "edition": "second"
+
+
+
+    }
+}
