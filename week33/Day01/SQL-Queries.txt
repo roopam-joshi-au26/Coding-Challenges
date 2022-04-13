@@ -1,0 +1,20 @@
+// 1. Display the first and last names of all actors from the table actor.
+        SELECT first_name,last_name FROM actor
+
+/* 2. You need to find the ID (actor id) number, first name, and last name of an
+        actor, of whom you know only the first name, "Joe." What is one query
+        would youuse to obtain this information? */
+        SELECT actor_id,first_name,last_name FROM actor WHERE first_name = "Joe"
+
+// 3. Find all actors whose last name contain the letters GEN
+        SELECT * FROM actor WHERE last_name LIKE "%GEN%"
+
+/* 4. Display the country_id and country columns of the following countries:
+        Afghanistan, Bangladesh, and China in using a single SQL query */
+        SELECT country_id,country FROM country WHERE country in ('Afghanistan', 'Bangladesh', 'China')
+
+// 5. Delete the description column in film table.
+        ALTER TABLE film DROP COLUMN description
+
+// 6. List the last names of actors, as well as how many actors have that lastname.
+        SELECT last_name,COUNT(*) as actor_count FROM actor GROUP BY last_name
